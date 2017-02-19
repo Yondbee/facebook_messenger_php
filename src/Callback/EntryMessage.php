@@ -15,7 +15,7 @@ class EntryMessage
 
     public $isRead = false;
     public $isDelivered = false;
-    public $isAuthentication = false;
+    public $isOptin = false;
     public $isAccountLinking = false;
     public $isPostback = false;
     public $isEcho = false;
@@ -40,7 +40,7 @@ class EntryMessage
         $this->updateRead();
         $this->updateDelivered();
         $this->updateAccountLinking();
-        $this->updateAuthentication();
+        $this->updateOptin();
         $this->updatePostback();
         $this->updateMessage();
         $this->updateEcho();
@@ -67,11 +67,11 @@ class EntryMessage
             $this->account_linking = new AccountLinking(Helper::array_find($this->_message, 'account_linking'));
     }
 
-    private function updateAuthentication()
+    private function updateOptin()
     {
-        $this->isAuthentication = (!is_null(Helper::array_find($this->_message, 'authentication')));
-        if ($this->isAuthentication)
-            $this->authentication = new Authentication(Helper::array_find($this->_message, 'authentication'));
+        $this->isOptin = (!is_null(Helper::array_find($this->_message, 'optin')));
+        if ($this->isOptin)
+            $this->optin = new Optin(Helper::array_find($this->_message, 'optin'));
     }
 
     private function updatePostback()
