@@ -4,16 +4,16 @@ namespace mapdev\FacebookMessenger\Callback;
 
 use mapdev\FacebookMessenger\Helper;
 
-class Authentication
+class Optin
 {
     public $ref;
 
     /**
      * Delivered constructor.
-     * @param $authentication
+     * @param $optin
      */
-    public function __construct($authentication)
+    public function __construct($optin)
     {
-        $this->ref = Helper::array_find($authentication, 'ref');
+        $this->ref = Helper::array_find($optin, 'ref');
     }
 }
