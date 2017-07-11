@@ -1,11 +1,11 @@
 <?php
 
-namespace mapdev\FacebookMessenger\Components;
+namespace yondbee\FacebookMessenger\Components;
 
-use mapdev\FacebookMessenger\Enums\ButtonType;
-use mapdev\FacebookMessenger\Enums\WebviewSize;
-use mapdev\FacebookMessenger\MessengerUtils;
-use mapdev\FacebookMessenger\Traits\HasTitle;
+use yondbee\FacebookMessenger\Enums\ButtonType;
+use yondbee\FacebookMessenger\Enums\WebviewSize;
+use yondbee\FacebookMessenger\MessengerUtils;
+use yondbee\FacebookMessenger\Traits\HasTitle;
 
 class Button implements \JsonSerializable
 {

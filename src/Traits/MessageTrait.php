@@ -1,14 +1,14 @@
 <?php
 
-namespace mapdev\FacebookMessenger\Traits;
+namespace yondbee\FacebookMessenger\Traits;
 
 
-use mapdev\FacebookMessenger\Enums\NotificationType;
-use mapdev\FacebookMessenger\Exceptions\CouldNotCreateMessage;
+use yondbee\FacebookMessenger\Enums\NotificationType;
+use yondbee\FacebookMessenger\Exceptions\CouldNotCreateMessage;
 
 /**
  * Class MessageTrait
- * @package mapdev\FacebookMessenger\Traits
+ * @package yondbee\FacebookMessenger\Traits
  */
 trait MessageTrait
 {

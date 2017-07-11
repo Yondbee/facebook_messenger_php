@@ -1,6 +1,6 @@
 <?php
 
-namespace mapdev\FacebookMessenger\Components;
+namespace yondbee\FacebookMessenger\Components;
 
 class ReceiptSummary implements \JsonSerializable
 {

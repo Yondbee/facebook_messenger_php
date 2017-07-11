@@ -1,10 +1,10 @@
 <?php
-namespace mapdev\FacebookMessenger\Messages;
+namespace yondbee\FacebookMessenger\Messages;
 
-use mapdev\FacebookMessenger\Components\ReceiptAddress;
-use mapdev\FacebookMessenger\Components\ReceiptSummary;
-use mapdev\FacebookMessenger\Interfaces\MessageInterface;
-use mapdev\FacebookMessenger\Traits\MessageTrait;
+use yondbee\FacebookMessenger\Components\ReceiptAddress;
+use yondbee\FacebookMessenger\Components\ReceiptSummary;
+use yondbee\FacebookMessenger\Interfaces\MessageInterface;
+use yondbee\FacebookMessenger\Traits\MessageTrait;
 use JsonSerializable;
 
 class ReceiptMessage implements MessageInterface, JsonSerializable

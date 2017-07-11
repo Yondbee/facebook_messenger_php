@@ -1,7 +1,7 @@
 <?php
-namespace mapdev\FacebookMessenger;
+namespace yondbee\FacebookMessenger;
 
-use mapdev\FacebookMessenger\Callback\Entry;
+use yondbee\FacebookMessenger\Callback\Entry;
 
 class Callback
 {

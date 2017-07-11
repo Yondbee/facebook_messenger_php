@@ -1,5 +1,5 @@
 <?php
-namespace mapdev\FacebookMessenger\Traits;
+namespace yondbee\FacebookMessenger\Traits;
 
 trait HasButtons
 {

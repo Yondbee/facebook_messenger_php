@@ -1,6 +1,6 @@
 <?php
 
-namespace mapdev\FacebookMessenger\Exceptions;
+namespace yondbee\FacebookMessenger\Exceptions;
 
 use Exception;
 use GuzzleHttp\Exception\ClientException;

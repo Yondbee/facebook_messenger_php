@@ -1,8 +1,8 @@
 <?php
 
-namespace mapdev\FacebookMessenger\Callback;
+namespace yondbee\FacebookMessenger\Callback;
 
-use mapdev\FacebookMessenger\Helper;
+use yondbee\FacebookMessenger\Helper;
 
 //TODO make into abstract which other inherit from (text, attachment, postback, read,delivered,auth,linking)
 class Message

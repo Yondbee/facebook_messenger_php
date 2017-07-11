@@ -1,7 +1,7 @@
 <?php
-namespace mapdev\FacebookMessenger\Callback;
+namespace yondbee\FacebookMessenger\Callback;
 
-use mapdev\FacebookMessenger\Helper;
+use yondbee\FacebookMessenger\Helper;
 
 class AccountLinking
 {

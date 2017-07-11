@@ -1,6 +1,6 @@
 <?php
 
-namespace mapdev\FacebookMessenger\Interfaces;
+namespace yondbee\FacebookMessenger\Interfaces;
 
 interface MessageInterface
 {

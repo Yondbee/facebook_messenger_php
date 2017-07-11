@@ -1,5 +1,5 @@
 <?php
-namespace mapdev\FacebookMessenger\Enums;
+namespace yondbee\FacebookMessenger\Enums;
 
 abstract class ActionType
 {

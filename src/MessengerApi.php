@@ -1,9 +1,9 @@
 <?php
-namespace mapdev\FacebookMessenger;
+namespace yondbee\FacebookMessenger;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
-use mapdev\FacebookMessenger\Exceptions\CouldNotSendNotification;
+use yondbee\FacebookMessenger\Exceptions\CouldNotSendNotification;
 
 class MessengerApi
 {

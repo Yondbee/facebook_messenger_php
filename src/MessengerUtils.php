@@ -1,7 +1,7 @@
 <?php
-namespace mapdev\FacebookMessenger;
+namespace yondbee\FacebookMessenger;
 
-use mapdev\FacebookMessenger\Exceptions\CouldNotCreateMessage;
+use yondbee\FacebookMessenger\Exceptions\CouldNotCreateMessage;
 
 class MessengerUtils
 {

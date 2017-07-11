@@ -1,8 +1,8 @@
 <?php
 
-namespace mapdev\FacebookMessenger\Callback;
+namespace yondbee\FacebookMessenger\Callback;
 
-use mapdev\FacebookMessenger\Helper;
+use yondbee\FacebookMessenger\Helper;
 
 class EntryMessage
 {
@@ -37,6 +37,7 @@ class EntryMessage
         $this->useCarbonDT = $useCarbonDate;
         if ($this->useCarbonDT)
             $this->datetime = \Carbon\Carbon::createFromTimestamp($this->timestamp / 1000); //if  needed
+
         $this->updateRead();
         $this->updateDelivered();
         $this->updateAccountLinking();

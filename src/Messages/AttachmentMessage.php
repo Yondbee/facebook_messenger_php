@@ -1,10 +1,10 @@
 <?php
-namespace mapdev\FacebookMessenger\Messages;
+namespace yondbee\FacebookMessenger\Messages;
 
-use mapdev\FacebookMessenger\Enums\AttachmentType;
-use mapdev\FacebookMessenger\Exceptions\CouldNotCreateMessage;
-use mapdev\FacebookMessenger\Interfaces\MessageInterface;
-use mapdev\FacebookMessenger\Traits\MessageTrait;
+use yondbee\FacebookMessenger\Enums\AttachmentType;
+use yondbee\FacebookMessenger\Exceptions\CouldNotCreateMessage;
+use yondbee\FacebookMessenger\Interfaces\MessageInterface;
+use yondbee\FacebookMessenger\Traits\MessageTrait;
 use JsonSerializable;
 
 class AttachmentMessage implements MessageInterface, JsonSerializable

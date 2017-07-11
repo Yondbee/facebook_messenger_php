@@ -1,12 +1,12 @@
 <?php
-namespace mapdev\FacebookMessenger;
+namespace yondbee\FacebookMessenger;
 
-use mapdev\FacebookMessenger\Enums\ThreadSettingState;
+use yondbee\FacebookMessenger\Enums\ThreadSettingState;
 use GuzzleHttp\Psr7;
 
 /**
  * Class Messenger
- * @package mapdev\FacebookMessenger
+ * @package yondbee\FacebookMessenger
  */
 class Messenger
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace mapdev\FacebookMessenger\Components;
+namespace yondbee\FacebookMessenger\Components;
 
-use mapdev\FacebookMessenger\MessengerUtils;
-use mapdev\FacebookMessenger\Traits\HasImage;
-use mapdev\FacebookMessenger\Traits\HasTitle;
+use yondbee\FacebookMessenger\MessengerUtils;
+use yondbee\FacebookMessenger\Traits\HasImage;
+use yondbee\FacebookMessenger\Traits\HasTitle;
 
 class QuickReply implements \JsonSerializable
 {

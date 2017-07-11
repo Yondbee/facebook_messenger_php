@@ -1,7 +1,7 @@
 <?php
-namespace mapdev\FacebookMessenger\Enums;
+namespace yondbee\FacebookMessenger\Enums;
 
-use mapdev\FacebookMessenger\Exceptions\CouldNotCreateButton;
+use yondbee\FacebookMessenger\Exceptions\CouldNotCreateButton;
 
 abstract class ButtonType
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace mapdev\FacebookMessenger;
+namespace yondbee\FacebookMessenger;
 
 
 class UserProfile

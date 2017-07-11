@@ -1,10 +1,10 @@
 <?php
 
-namespace mapdev\FacebookMessenger\Messages;
+namespace yondbee\FacebookMessenger\Messages;
 
-use mapdev\FacebookMessenger\Interfaces\MessageInterface;
-use mapdev\FacebookMessenger\MessengerUtils;
-use mapdev\FacebookMessenger\Traits\MessageTrait;
+use yondbee\FacebookMessenger\Interfaces\MessageInterface;
+use yondbee\FacebookMessenger\MessengerUtils;
+use yondbee\FacebookMessenger\Traits\MessageTrait;
 use JsonSerializable;
 
 class CardsMessage implements MessageInterface, JsonSerializable

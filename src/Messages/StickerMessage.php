@@ -1,9 +1,9 @@
 <?php
-namespace mapdev\FacebookMessenger\Messages;
+namespace yondbee\FacebookMessenger\Messages;
 
-use mapdev\FacebookMessenger\Exceptions\CouldNotCreateMessage;
-use mapdev\FacebookMessenger\Interfaces\MessageInterface;
-use mapdev\FacebookMessenger\Traits\MessageTrait;
+use yondbee\FacebookMessenger\Exceptions\CouldNotCreateMessage;
+use yondbee\FacebookMessenger\Interfaces\MessageInterface;
+use yondbee\FacebookMessenger\Traits\MessageTrait;
 use JsonSerializable;
 
 class StickerMessage implements MessageInterface, JsonSerializable

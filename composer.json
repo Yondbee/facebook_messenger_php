@@ -14,7 +14,7 @@
     },
     "autoload": {
         "psr-4": {
-            "mapdev\\FacebookMessenger\\": "src"
+            "yondbee\\FacebookMessenger\\": "src"
         }
     },
     "license": "MIT",
