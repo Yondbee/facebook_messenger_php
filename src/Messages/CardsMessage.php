@@ -33,9 +33,7 @@ class CardsMessage implements MessageInterface, JsonSerializable
         $this->checkRecipient();
 
         return [
-            'recipient' => [
-                'id' => $this->recipient_id
-            ],
+            'recipient' => $this->getRecipientObject(),
             'message' => [
                 'attachment' => [
                     'type' => 'template',

@@ -37,10 +37,11 @@ class StickerMessage implements MessageInterface, JsonSerializable
         }
 
         return [
-            'recipient' => [
-                'id' => $this->recipient_id
-            ],
-            'sticker_id' => $this->sticker
+            'recipient' => $this->getRecipientObject(),
+            'message' => [
+                'sticker_id' => $this->sticker
+            ]
+
         ];
     }
 

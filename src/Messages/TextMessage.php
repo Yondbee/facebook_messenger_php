@@ -27,9 +27,7 @@ class TextMessage implements MessageInterface, \JsonSerializable
         $this->checkRecipient();
 
         return [
-            'recipient' => [
-                'id' => $this->recipient_id
-            ],
+            'recipient' => $this->getRecipientObject(),
             'message' => [
                 'text' => MessengerUtils::checkStringLengthAndEncoding($this->text,320,'UTF-8')
             ]

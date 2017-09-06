@@ -18,6 +18,8 @@ class Message
 
     public $text;
     public $quick_reply;
+    public $app_id;
+    public $metadata;
     public $attachments = [];
 
     /**

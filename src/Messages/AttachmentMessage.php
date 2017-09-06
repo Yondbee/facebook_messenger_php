@@ -12,6 +12,7 @@ class AttachmentMessage implements MessageInterface, JsonSerializable
     use MessageTrait;
 
     public $attachment_type;
+    public $text;
 
     public function type($type)
     {
@@ -107,9 +108,7 @@ class AttachmentMessage implements MessageInterface, JsonSerializable
         }
 
         return [
-            'recipient' => [
-                'id' => $this->recipient_id
-            ],
+            'recipient' => $this->getRecipientObject(),
             'message' => [
                 'attachment' => [
                     'type' => $this->attachment_type,

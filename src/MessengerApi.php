@@ -7,7 +7,7 @@ use yondbee\FacebookMessenger\Exceptions\CouldNotSendNotification;
 
 class MessengerApi
 {
-    protected $api_url = "https://graph.facebook.com/v2.7/";
+    protected $api_url = "https://graph.facebook.com/v2.10/";
 
     protected $token = null;
 
@@ -26,6 +26,11 @@ class MessengerApi
     protected function checkToken()
     {
         return !is_null($this->token);
+    }
+
+    public function getToken()
+    {
+        return $this->token;
     }
 
     public function callApi($path, $data, $type = self::POST, $json = true)

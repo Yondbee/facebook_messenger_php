@@ -31,7 +31,6 @@ class EntryMessage
     {
         $this->_message = $message;
         $this->sender_id = Helper::array_find($message, 'sender.id');
-        $this->sender_id = Helper::array_find($message, 'sender.id');
         $this->recipient_id = Helper::array_find($message, 'recipient.id');
         $this->timestamp = Helper::array_find($message, 'timestamp');
         $this->useCarbonDT = $useCarbonDate;

@@ -37,9 +37,7 @@ class ActionMessage implements MessageInterface, JsonSerializable
             throw CouldNotCreateMessage::noActionDefined();
 
         return [
-            'recipient' => [
-                'id' => $this->recipient_id
-            ],
+            'recipient' => $this->getRecipientObject(),
             'sender_action' => $this->action
         ];
         //return array

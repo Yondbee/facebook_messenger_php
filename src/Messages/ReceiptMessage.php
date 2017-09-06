@@ -129,9 +129,7 @@ class ReceiptMessage implements MessageInterface, JsonSerializable
         }
 
         return [
-            'recipient' => [
-                'id' => $this->recipient_id
-            ],
+            'recipient' => $this->getRecipientObject(),
             'message' => [
                 'attachment' => [
                     'type' => 'template',

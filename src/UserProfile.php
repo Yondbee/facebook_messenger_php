@@ -2,6 +2,8 @@
 
 namespace yondbee\FacebookMessenger;
 
+use Yii;
+
 
 class UserProfile
 {
@@ -12,6 +14,8 @@ class UserProfile
     public $locale;
     public $timezone;
     public $gender;
+    public $last_ad;
+    public $can_pay;
 
     public static function create($data)
     {
@@ -27,5 +31,11 @@ class UserProfile
         $this->locale = $data->locale;
         $this->timezone = $data->timezone;
         $this->gender = $data->gender;
+
+        if (property_exists($data, 'last_ad_referral'))
+            $this->last_ad = $data->last_ad_referral;
+
+        if (property_exists($data, 'is_payment_enabled'))
+            $this->can_pay = $data->is_payment_enabled;
     }
 }
